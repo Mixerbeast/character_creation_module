@@ -2,6 +2,13 @@ from random import randint
 
 
 def attack(char_name, char_class):
+    """
+    Функция attack принимает два аргумента: имя персонажа и класс персонажа,
+    и возвращает строку с сообщением об атаке и сгенерированным уроном.
+    :param char_name: имя персонажа
+    :param char_class: класс персонажа
+    :return: возвращение текущего урона персонажу
+    """
     if char_class == 'warrior':
         return (f"{char_name} нанёс урон противнику равный "
                 f"{5 + randint(3, 5)}")
@@ -15,6 +22,13 @@ def attack(char_name, char_class):
 
 
 def defence(char_name, char_class):
+    """
+    Функция которая  возвращает строку с сообщением о блокировании урона
+    и сгенерированными очками защиты
+    :param char_name: имя персонажа
+    :param char_class: класс персонажа
+    :return: возвращение текущего значения блокирования урона персонажу
+    """
     if char_class == 'warrior':
         return (f"{char_name} блокировал {10 + randint(5, 10)} ед. урона")
     if char_class == 'mage':
@@ -25,6 +39,13 @@ def defence(char_name, char_class):
 
 
 def special(char_name, char_class):
+    """
+    Функция которая возвращает строку с сообщением о применении
+    специального умения и сгенерированными очками для этого умения.
+    :param char_name: имя персонажа
+    :param char_class: класс персонажа
+    :return: возвращение сгенерированных очков для этого умения
+    """
     if char_class == 'warrior':
         return (f"{char_name} применил специальное умение "
                 f"«Выносливость {80 + 25}»")
@@ -36,6 +57,15 @@ def special(char_name, char_class):
 
 
 def start_training(char_name, char_class):
+    """
+    Функция которая о запускает режим тренировки персонажа.
+    В зависимости от класса персонажа выводится соответствующее приветствие.
+    :param char_name: имя персонажа
+    :param char_class: класс персонажа
+    :param while: обрабатывает алгоритм пропуска тренировки или вывод одной
+    применения команды
+    :return: производит выход из функции тренировка
+    """
     if char_class == 'warrior':
         print(f"{char_name}, ты Воитель — отличный боец ближнего боя.")
     if char_class == 'mage':
@@ -60,6 +90,14 @@ def start_training(char_name, char_class):
 
 
 def choice_char_class():
+    """
+    Функция которая запоминает выбор класса персонажа пользователем
+    и возращает выбранный класс персонажа
+    :param char_name: Ввод имени пользователя
+    :param char_class: Выбор класса персонажа
+    :param: approve_choice: подтверждение выбора персонажа
+    :return: возвращение текущего значения выброного персонажа
+    """
     approve_choice = None
     char_class = None
     while approve_choice != 'y':

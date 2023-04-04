@@ -1,8 +1,11 @@
 {
-    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Enabled": false,
     "python.linting.enabled": true,
     "files.autoSave": "afterDelay",
     "window.autoDetectColorScheme": true,
     "python.linting.pylintEnabled": false,
-    "python.analysis.typeCheckingMode": "basic"
+    "python.analysis.typeCheckingMode": "basic",
+    "python.linting.mypyEnabled": true,
+    "CodeGPT.model": "gpt-4",
+    "CodeGPT.query.language": "Russian"
 }

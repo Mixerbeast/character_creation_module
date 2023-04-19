@@ -1,0 +1,7 @@
+{
+    "CodeGPT.model": "gpt-4",
+    "CodeGPT.maxTokens": 1632,
+    "CodeGPT.apiKey": "OpenAI",
+    "python.analysis.typeCheckingMode": "basic",
+    "CodeGPT.query.language": "Russian"
+}

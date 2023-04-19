@@ -27,13 +27,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-# def play_game():
-#     yes_no = {
-#         'Y': True,
-#         'N': False,
-#         # Новые значения словаря.
-#         'y': True,
-#         'n': False,
-#     }
